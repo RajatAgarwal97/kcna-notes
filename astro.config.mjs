@@ -4,14 +4,16 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
+	// Served as a GitHub Pages project site at /kcna-notes/.
+	site: 'https://rajatagarwal97.github.io',
+	base: '/kcna-notes',
 	integrations: [
 		starlight({
 			title: 'KCNA Notes',
 			description:
 				'My personal study notes for the Kubernetes and Cloud Native Associate (KCNA) exam.',
 			social: [
-				// TODO: replace with your real GitHub URL
-				{ icon: 'github', label: 'GitHub', href: 'https://github.com/your-username' },
+				{ icon: 'github', label: 'GitHub', href: 'https://github.com/RajatAgarwal97' },
 			],
 			sidebar: [
 				{
